@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
 /*
- * 使用main方法启动spring boot,(web server使用的是toncat)
+ * 使用main方法启动spring boot,(web server使用的是tomcat)
  * 注意:
  * 1、main方法所在类需要添加注解 @EnableAutoConfiguration
  * 2、main方法所在类需要添加注解 @ComponentScan指示spring管理的所有类
