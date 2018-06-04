@@ -1,5 +1,7 @@
 package com.imooc.controller;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -8,7 +10,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloController {
 	@RequestMapping("/hello")
 	@ResponseBody
-	public String hello() {
+	public String hello(HttpServletResponse response) {
+		response.addHeader("abc", "xyz");
 		return "hello";
 	}
 }
